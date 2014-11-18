@@ -1,0 +1,111 @@
+		/**************************************		
+		Diseñado por Félix León en la ciudad de
+		Araure estado Portuguesa, Venezuela.
+		hierro59@gmail.com
+		Todos los derechos reservados.
+		**************************************/
+
+@import url(reset.css);
+
+								
+								/*************
+								Diseño general
+								*************/
+
+body {
+	
+}
+
+
+h1 {
+	
+	}
+	
+h2 {
+	
+	}
+
+h3 {
+	
+	}
+	
+h4 {
+	
+}
+
+h5 {
+	
+}
+
+
+
+								/********************
+								Cabecera de la pagina
+								********************/
+
+header {
+	
+}
+
+								/****************
+								Pagina de ingreso
+								****************/
+
+
+
+								/**************
+								Pagina Principal
+								***************/
+
+
+
+								/**********
+								Formularios
+								***********/
+table {
+	border: solid 1px;
+	border-color: black;
+	
+
+}
+
+th {
+	border: solid 1;
+	border-color: black;
+}
+
+tr {
+	border: solid 1;
+	border-color: black;
+}
+
+td {
+	border: solid 1;
+	border-color: black;
+}
+
+table img {
+	
+}
+
+[required] {
+	box-shadow: 0 0 3px green;
+}
+
+/*input:invalid {
+	font-family: Verdana, Arial;
+	font-size: 20px;
+	color: white;
+	background-color: red;
+}
+
+								/***************
+								Pie de la pagina
+								***************/
+
+footer {
+	
+	}
+	
+	
+								
