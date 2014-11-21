@@ -1,5 +1,5 @@
 <?php
-include('root.php');
+include('../seguridad_root.php');
 ?>
 <!DOCTYPE HTML>
 <html>

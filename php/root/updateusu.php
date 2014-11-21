@@ -16,7 +16,7 @@ password='$_REQUEST[password]',
 tipo_usuario='$_REQUEST[tipo_usuario]'
 where codigo=$codigo")
 
- or die("Problemas en el select ".mysql_error()." <a href='principal.php'>Volver</a>");
+ or die("Problemas en el select ".mysql_error()."<a href='principal.php'>Volver</a>");
 	
 header("Location: registro_usuario_exitoso.php");
 }

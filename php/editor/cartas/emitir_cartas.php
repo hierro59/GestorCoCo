@@ -13,12 +13,12 @@
 		<a href="../../../index.php">Salir</a>
    </header>
 	<section id="">
-		<form method="post" action="carta_residencia.php">
+		<form method="GET" action="seleccionar_documento.php">
 			Introduzca número de cédula<br>
 			<input type="text" name="cedula" required>
-			<select name="selec_documento">
+			<select name="seleccionar_documento">
 				<option value="carta_residencia">Carta de residencia</option>
-				<option value="carta_residencia">Carta alquilado</option>
+				<option value="carta_alquilado">Carta alquilado</option>
 			</select>
 			<input type="submit" value="Generar documento">
 		

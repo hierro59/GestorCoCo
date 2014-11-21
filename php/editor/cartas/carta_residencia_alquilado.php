@@ -31,12 +31,12 @@ setlocale(LC_ALL,"es_VE.UTF-8"); //cambia a español para mostrar la fecha con "
 		<br>
 		<p align="justify">
 			Por medio de la presente se hace constar que <strong><?php echo $reg['nombres'], " ", $reg['apellidos'];?></strong> titular de la cédula de identidad número 
-			<?php echo $reg['cedula'];?>, venezolano/a, mayor de edad y en plenas facultades legales, RESIDE en  
+			<?php echo $reg['cedula'];?>, venezolano/a, mayor de edad y en plenas facultades legales, RESIDE en la 
 			<?php echo $reg['calle']; echo " "; ?> casa número
 			<?php echo $reg['casa_numero']; echo " "; echo $reg['sector'];?> de  
 			<?php echo $reg['ciudad'];?> del municipio 
 			<?php echo $reg['municipio'];?> del estado 
-			<?php echo $reg['estado'];?>, desde hace aproximadamente ______ años.
+			<?php echo $reg['estado'];?>, en calidad de ARRENDADO, desde hace aproximadamente ______ años, por lo que requiere de una solución habitacional.
 			<br>
 			<br>
 			Carta que se expide a petición de la parte interesada a los <?php echo date("d");?> días del mes de <?php echo strftime("%B");?> del <?php echo date("Y");?>.

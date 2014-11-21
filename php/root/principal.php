@@ -24,6 +24,11 @@
                 </td>
                 <td> <a href="../editor/principal_editor.php">Editor</a>  </td>
 				</tr>
+				<tr>
+					<td>
+					<a href="mi_consejo_comunal.php">Mi Consejo Comunal</a>
+					</td>				
+				</tr>
             
         </table>
 	</section>

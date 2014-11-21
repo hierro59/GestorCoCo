@@ -13,10 +13,27 @@
 		<a href="../../../index.php">Salir</a>
    </header>
 	<section id="">
-		<a href="nueva_persona.php">Registrar persona</a>
+	
+	<table>
+	<tr>
+	<td>
+		<a href="nueva_persona.php">Registrar nueva persona</a><br>
+	</td>
+	</tr>
+	<tr>
+	<td>Editar persona existente</td>
+	<td>
+		<form method="post" action="editar_persona.php">
+		Ingrese número de cédula:<br>
+			<input type="text" name="cedula" required="">
+			<input type="submit" value="Editar">
+		</form>
+	</td>
+	</tr>		
+	</table>
 	</section>
 	<footer>
-		
+	
 	</footer>
 </body>
 </html>

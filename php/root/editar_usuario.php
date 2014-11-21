@@ -13,7 +13,7 @@ include('../seguridad_root.php');?>
 	<header>
 		<a href="../../index.php">Salir</a>
 		<a href="principal.php">Inicio</a>
-    </header>
+   </header>
 <?php 
 include('../bd_conexion.php');
 

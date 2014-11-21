@@ -11,11 +11,17 @@ En esta versión se puede:
 * Administrar usuarios.
 	* Agregar nuevos usuarios a la base de datos.
 	* Editar usuarios existentes.
-* Registrar nuevas personas.
-* Emitir cartas de residencia.
-
-En la próxima versión se agregaran las siguientes funciones:
-
-* Editar personas existentes en la base de datos.
 * Agregar y editar Consejo Comunal gestor.
-* Emitir cartas de residencia en otras modalidades como alquilado.
+* Registrar personas naturales (vecinos).
+	* Registrar nuevas personas.
+	* Editar personas existentes en la base de datos.
+* Emitir cartas.
+	* Carta de residencia simple.
+	* Carta de residencia como arrendado.
+
+En la próxima versión se agregaran las siguientes funciones y mejoras:
+
+* Mejora de la interfase gráfica.
+* Mejora en la busqueda y muestreo de datos de las bases de datos.
+* Registro de voceros.
+* Emitir carta de residencia vivir con familiar.
