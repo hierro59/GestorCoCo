@@ -20,7 +20,7 @@ session_destroy(); //Cierra la sesión al ingresar al index
 	<section>
 		<div id="centrar_ingreso">
 		<form method="post" action="php/validaroperador.php">
-		<table id="index">
+		<table>
 			<tr>
 				<td>Ususario<br>
 					<input id="" type="text" name="usuario" value="" required>				

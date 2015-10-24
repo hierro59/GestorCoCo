@@ -40,7 +40,7 @@ else {
 			</tr>
 			<tr> 
 				<td id="boton">
-					<label for="cedula" ><h3>Consultar o editar vecino</h3></label><br><br>
+					<label for="cedula" style="height:100%;width:100%" ><a href="#"><h3>Consultar o editar vecino</h3></a></label><br><br>
 					<form method="post" action="editar_persona.php" name="formulario">
 					<input type="text" name="cedula" required="" value="Ingrese número de cédula" id="cedula" onclick="borracampocedula()" onblur="restauracampocedula()">
 					<input type="submit" value="Editar">

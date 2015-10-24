@@ -11,7 +11,6 @@ include('../seguridad_root.php');?>
 <body>
 <div id="body">
 	<header>
-		<img src="../../img/LogoCabecera.png" alt="Gestor para Consejos Comunales" />
 		<div id="icomenu">
 		<a href="../../index.php"><img src="../../img/icosalir.png" alt="Salir" /></a>
 		</div>

@@ -16,7 +16,8 @@
 	</header>
 	<section>
 		<table id="centrar" align="center" >
-        
+        <!--	<th colspan="2" >  	
+                <h3>Escoja lo que desea hacer</h3> -->
 			</th>
 				<tr>
 					<td id="boton"><a href="../editor/principal_editor.php">Asuntos Civiles</a></td>

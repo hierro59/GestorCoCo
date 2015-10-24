@@ -20,17 +20,17 @@
 	<section>
 		<form action="editar_usuario.php" method="post">
 		<table id="centrar" align="center">
-			<tr>
-				<td id="item">
+			<tr id="iten">
+				<td>
 				<h3>Editar</h3>
 				</td>
-				<td id="item">
+				<td>
 				<h3>Codigo</h3>
 				</td>
-				<td id="item">
+				<td>
 				<h3>Nombre</h3>
 				</td>
-				<td id="item">
+				<td>
 				<h3>Usuario</h3>
 				</td>
 			</tr>

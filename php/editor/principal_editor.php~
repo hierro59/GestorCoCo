@@ -33,10 +33,10 @@ else {
 	<section id="">
 		<table id="centrar" align="center">
 			<tr>
-				<td id="boton"><a href="personas/admin_personas.php">Personas</a><br></td>
+				<td><a href="personas/admin_personas.php">Personas</a><br></td>
 			</tr>
 			<tr>
-				<td id="boton"><a href="cartas/emitir_cartas.php">Emitir Cartas</a></td>
+				<td><a href="cartas/emitir_cartas.php">Emitir Cartas</a></td>
 			</tr>
 		
 		</table>
