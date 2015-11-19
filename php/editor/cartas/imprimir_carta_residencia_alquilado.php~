@@ -3,7 +3,9 @@ include('../../seguridad.php');
 include('../../buscar_personas.php');
 setlocale(LC_ALL,"es_VE.UTF-8"); //cambia a español para mostrar la fecha con "strftime"
 ?>
+
 <!DOCTYPE HTML>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" href="../../../css/estilo.css" type="text/css">
@@ -13,26 +15,11 @@ setlocale(LC_ALL,"es_VE.UTF-8"); //cambia a español para mostrar la fecha con "
 <body>
 
 	<header>
-		<img src="../../../img/LogoCabecera.png" alt="Gestor para Consejos Comunales" />
-		<div id="icomenu">
-		<a href="../../../index.php"><img src="../../../img/icosalir.png" alt="Salir" /></a>
-		</div>
-<?php		
 		
-if($_SESSION['tipo_usuario']=="1") {
-	
-echo	"<div id='icomenu'>
-		<a href='../../root/principal.php'><img src='../../../img/inicio.png' alt='Salir' /></a>
-		</div>";
-		}
-else {
-	echo	"<div id='icomenu'>
-		<a href='../principal_editor.php'><img src='../../../img/inicio.png' alt='Salir' /></a>
-		</div>";
-		}
-?>
 	</header>
-  	<section class="cartas">
+   
+   
+	<section>
 		<p align="center">
 			República Bolivariana de Venezuela<br>
 			Ministerio del Poder Popular para las Comunas<br>
@@ -73,20 +60,15 @@ else {
 			Vocero Contraloría Social
 		</p>
 	</section>
-	<?php	$pasarcedula=$_GET[cedula];?>	
 	<section>
-	<table class="vecino" align="center">
-		<tr>
-			<td>
-				<form method="GET" action="imprimir_carta_residencia.php">
-					<input type="hidden" name="cedula" value="<?php echo $pasarcedula;?>">
-					<input id="botonGris" type="submit" value="Imprimir" id="BotonInput">
-					<input id="botonGris" type="button" value="Cancelar" onClick="location.href='../principal_editor.php'" id="BotonInput">
-				</form>
-			</td>
-		</tr>	
-	</table>
-</section>	
+	
+
+		<script>
+          setTimeout("print();",500);
+          setTimeout("window.location='../principal_editor.php';",10000);
+         </script>
+	
+	</section>	
 	
 	
 	<footer>

@@ -23,7 +23,7 @@ include('../consultar_mi_coco.php');
     </header>
 		<section>
 		<form method="POST" action="update_coco.php" onsubmit="return confirmar();">
-			<table>
+			<table class="vecino">
 				<tr>
 					<td>Numero de registro
 						<input type="text" name="numero_registro" value="<?php echo $reg_mi_coco['numero_registro'];?>" />
@@ -40,10 +40,14 @@ include('../consultar_mi_coco.php');
 						<input type="text" name="rif_coco" value="<?php echo $reg_mi_coco['rif_coco'];?>" />
 					</td>
 				</tr>
-			</table>
-			<input type="submit" value="Grabar datos" />
-			<input type="button" value="Cancelar" onClick="location.href='mi_consejo_comunal.php'"/>
+				<tr>
+					<td colspan="2">
+			<input id="botonGris" type="submit" value="Grabar datos" />
+			<input id="botonGris" type="button" value="Cancelar" onClick="location.href='mi_consejo_comunal.php'"/>
 			<input type="hidden" name="codigo_coco" value="1" />
+					</td>
+				</tr>
+			</table>
 		</form>
 		</section>    
     <footer>

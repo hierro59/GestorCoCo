@@ -72,5 +72,5 @@ if(document.formulario.cedula.value == "Ingrese número de cédula")
 
 function restauracampocedula(){
   if(document.formulario.cedula.value=="")
-   document.formulario.cedula.value="Ingrese número de cédula"s
+   document.formulario.cedula.value="Ingrese número de cédula"
    }

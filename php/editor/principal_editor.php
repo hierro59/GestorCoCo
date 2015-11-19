@@ -7,13 +7,11 @@
 <title>Editor | CoCo</title>
 </head>
 <body>
-<div id="">
 	<header>
 		<img src="../../img/LogoCabecera.png" alt="Gestor para Consejos Comunales" />
 		<div id="icomenu">
 		<a href="../../index.php"><img src="../../img/icosalir.png" alt="Salir" /></a>
 		</div>
-		
 <?php		
 		
 if($_SESSION['tipo_usuario']=="1") {
@@ -24,7 +22,7 @@ echo	"<div id='icomenu'>
 		}
 else {
 	echo	"<div id='icomenu'>
-		<a href='principal.php'><img src='../../img/inicio.png' alt='Salir' /></a>
+		<a href='../principal_editor.php'><img src='../../img/inicio.png' alt='Salir' /></a>
 		</div>";
 		}
 		
@@ -33,10 +31,10 @@ else {
 	<section id="">
 		<table id="centrar" align="center">
 			<tr>
-				<td id="boton"><a href="personas/admin_personas.php">Personas</a><br></td>
+				<td id="boton"><a href="personas/admin_personas.php" id="BotonLink">Personas</a></td>
 			</tr>
 			<tr>
-				<td id="boton"><a href="cartas/emitir_cartas.php">Emitir Cartas</a></td>
+				<td id="boton"><a href="cartas/emitir_cartas.php" id="BotonLink">Emitir Cartas</a></td>
 			</tr>
 		
 		</table>

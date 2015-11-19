@@ -19,18 +19,18 @@
     </header>
 	<section>
 		<form action="editar_usuario.php" method="post">
-		<table id="centrar" align="center">
-			<tr id="iten">
-				<td>
+		<table class="vecino" align="center">
+			<tr>
+				<td id="item">
 				<h3>Editar</h3>
 				</td>
-				<td>
+				<td id="item">
 				<h3>Codigo</h3>
 				</td>
-				<td>
+				<td id="item">
 				<h3>Nombre</h3>
 				</td>
-				<td>
+				<td id="item">
 				<h3>Usuario</h3>
 				</td>
 			</tr>

@@ -7,7 +7,7 @@
 </head>
 	<body>
 		<section>
-			<table class="advertencia">
+			<table id="centrar_logo">
 				<tr>
 					<td>
 					<h3>Persona registrada con</h3>

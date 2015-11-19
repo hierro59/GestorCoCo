@@ -1,7 +1,7 @@
 <?php
+mysql_query("SET NAMES 'utf8'");
 include('../../seguridad.php');
 include('../../bd_conexion.php');
-mysql_query("SET NAMES 'utf8'");
 
 mysql_query("insert into personas
 (nombres,

@@ -6,11 +6,8 @@
 	<link rel="stylesheet" href="../../css/estilo.css" type="text/css">
 </head>
 	<body>
-		<header>
-    	
-      </header>
 		<section aling="center">
-			<table>
+			<table class="advertencia">
 				<tr>
 					<td>
 					<h3>Usuario registrado con</h3><br>
@@ -19,7 +16,7 @@
 				</tr>
 				<tr>
 					<td>
-					<input name="button" type="button" onclick="window.close();" value="Cerrar" /> 
+					<input id="botonGris" name="button" type="button" onclick="window.close();" value="Cerrar" /> 
 					</td>
 				</tr>
 			</table>

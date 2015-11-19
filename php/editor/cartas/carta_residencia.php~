@@ -11,7 +11,7 @@ setlocale(LC_ALL,"es_VE.UTF-8"); //cambia a español para mostrar la fecha con "
 <title>Carta de residencia | CoCo</title>
 </head>
 <body>
-
+<div id="">
 	<header>
 		<img src="../../../img/LogoCabecera.png" alt="Gestor para Consejos Comunales" />
 		<div id="icomenu">

@@ -10,7 +10,7 @@ session_destroy(); //Cierra la sesión al ingresar al index
 	<link rel="stylesheet" href="css/estilo.css" type="text/css" />
 	<link rel="icon" type="image/png" href="img/coquito.png" />
 </head>
-<body id="body-index">
+<body>
 <div id="center">
 	<div id="centrar_logo">
 		
@@ -20,20 +20,20 @@ session_destroy(); //Cierra la sesión al ingresar al index
 	<section>
 		<div id="centrar_ingreso">
 		<form method="post" action="php/validaroperador.php">
-		<table id="index">
+		<table id="tableindex">
 			<tr>
 				<td>Ususario<br>
-					<input id="" type="text" name="usuario" value="" required>				
+					<input id="ingreso" type="text" name="usuario" value="" required>				
 				</td>			
 			</tr>
 			<tr>
 				<td>Contraseña <br>
-					<input type="password" name="password" required>				
+					<input id="ingreso" type="password" name="password" required>				
 				</td>
 			</tr>
 			<tr>
 				<td>
-				<input type="submit"	value="ingresar">
+				<input id="cool" type="submit"	value="Ingresar">
 				</td>
 			</tr>
 		</table>

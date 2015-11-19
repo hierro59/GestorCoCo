@@ -44,8 +44,8 @@ else {
 						<option value="carta_residencia">Carta de residencia</option>
 						<option value="carta_alquilado">Carta alquilado</option>
 					</select><br><br>
-					<input id="botonGris" type="submit" value="Generar documento" id="BotonInput">
-					<input id="botonGris" type="button" value="Cancelar" onClick="location.href='../principal_editor.php'" id="BotonInput">
+					<input type="submit" value="Generar documento" id="BotonInput">
+					<input type="button" value="Cancelar" onClick="location.href='../principal_editor.php'" id="BotonInput">
 					</form>
 				</td>
 			</tr>

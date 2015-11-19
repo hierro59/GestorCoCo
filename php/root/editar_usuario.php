@@ -29,9 +29,9 @@ if ($reg=mysql_fetch_array($rst_usuarios))
 ?>
 	<section>
 	<form action="updateusu.php" method="post" target="ventanasola" onsubmit="window.open('', 'ventanasola', 'width=400,height=300,top=200,left=300,toolbar=no, location=no, directories=no, status=no, menubar=no ,scrollbars=no, resizable=no')">
-			<table align="center" border="solid">
+			<table class="vecino" align="center" border="solid">
 				<th colspan="2">
-					Ingrese los datos del nuevo usuario
+					Edite los datos del usuario
 				</th>
 				<tr>
 					<td>
@@ -85,9 +85,8 @@ if ($reg=mysql_fetch_array($rst_usuarios))
 				</tr>
 				<tr>
 					<td colspan="2">
-					<input type="button" value="Cancelar" onClick="location.href='admin_usuario.php'">
-						<input type="reset" value="Limpiar">
-						<input type="submit" value="Registrar">
+						<input id="botonGris" type="button" value="Cancelar" onClick="location.href='admin_usuario.php'">
+						<input id="botonGris" type="submit" value="Actualizar">
 					</td>
 				</tr>
 			</table>

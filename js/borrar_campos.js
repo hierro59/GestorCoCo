@@ -42,6 +42,17 @@ function restauracampohab(){
    document.formulario.tlf_habitacion.value="Ej. 0255-1234567"
    }
    
+  //Tlf Trabajo
+   
+function borracampotrabajo(){
+if(document.formulario.tlf_trabajo.value == "Ej. 0255-1234567")
+   document.formulario.tlf_trabajo.value = ""} 
+
+function restauracampotrabajo(){
+  if(document.formulario.tlf_trabajo.value=="")
+   document.formulario.tlf_trabajo.value="Ej. 0255-1234567"
+   }
+   
    //Correo
    
 function borracampocorreo(){

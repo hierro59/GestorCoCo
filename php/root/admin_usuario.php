@@ -19,7 +19,7 @@
     </header>
 	<section>
 		<form action="editar_usuario.php" method="post">
-		<table id="centrar" align="center">
+		<table class="vecino" align="center">
 			<tr>
 				<td id="item">
 				<h3>Editar</h3>
@@ -58,9 +58,9 @@ while ($reg=mysql_fetch_array($rst_usuarios)) 						//Listamos y ordenamos los r
 ?>
 	<tr >
 		<td colspan="4">
-		<input type="button" value="Nuevo usuario" onClick="location.href='nuevo_usuario.php'" />
-		<input type="submit" value="Editar" />
-		<input type="button" value="Cancelar" onClick="location.href='principal.php'" />
+		<input id="botonGris" type="button" value="Nuevo usuario" onClick="location.href='nuevo_usuario.php'" />
+		<input id="botonGris" type="submit" value="Editar" />
+		<input id="botonGris" type="button" value="Cancelar" onClick="location.href='principal.php'" />
 		</td>
 		
 	</tr>

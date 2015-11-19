@@ -15,21 +15,22 @@
 		</div>
 	</header>
 	<section>
-		<table id="centrar" align="center" >
-        <!--	<th colspan="2" >  	
-                <h3>Escoja lo que desea hacer</h3> -->
+		<div class="marco" id="center">
+			<table id="centrar" align="center" >
+        
 			</th>
 				<tr>
-					<td id="boton"><a href="../editor/principal_editor.php">Asuntos Civiles</a></td>
+					<td id="boton"><a href="../editor/principal_editor.php" id="BotonLink">Asuntos Civiles</a></td>
 				</tr>
 				<tr>
-					<td id="boton"> <a href="mi_consejo_comunal.php"> Mi Consejo Comunal</a></td>				
+					<td id="boton"> <a href="mi_consejo_comunal.php" id="BotonLink"> Mi Consejo Comunal</a></td>				
 				</tr>
 				<tr>
-					<td id="boton"><a href="admin_usuario.php">Administrar usuarios</a></td>				
+					<td id="boton"><a href="admin_usuario.php" id="BotonLink">Administrar usuarios</a></td>				
 				</tr>
             
         </table>
+   	</div>
 	</section>
 	<footer>
 	

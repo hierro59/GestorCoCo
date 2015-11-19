@@ -5,10 +5,9 @@
 <link rel="stylesheet" href="../../../css/estilo.css" type="text/css">
 <link rel="icon" type="image/png" href="../../../img/coquito.png" />
 <script type="text/javascript" src="../../../js/borrar_campos.js"></script>
-<title>Emitir cartas | CoCo</title>
+<title>Nuevo Vecino | CoCo</title>
 </head>
 <body>
-<div id="">
 	<header>
 		<img src="../../../img/LogoCabecera.png" alt="Gestor para Consejos Comunales" />
 		<div id="icomenu">
@@ -31,28 +30,28 @@ else {
 ?>
 	</header>
 	<section id="">
-	
-		<table class="vecino" align="center">
-		<form method="GET" action="seleccionar_documento.php" name="formulario">
-			<th>
-				<h3>Emitir carta de residencia</h3>			
-			</th>
-			<tr>
-				<td><br>
-					<input type="text" name="cedula" required value="Ingrese número de cédula" id="cedula" onclick="borracampocedula()" onblur="restauracampocedula()"><br><br>
-					<select name="seleccionar_documento">
-						<option value="carta_residencia">Carta de residencia</option>
-						<option value="carta_alquilado">Carta alquilado</option>
-					</select><br><br>
-					<input id="botonGris" type="submit" value="Generar documento" id="BotonInput">
-					<input id="botonGris" type="button" value="Cancelar" onClick="location.href='../principal_editor.php'" id="BotonInput">
-					</form>
-				</td>
-			</tr>
-					
-		
 
-		</table>
+		<form method="GET" action="reg_nueva_persona_bd.php" name="formulario" target="ventanasola" onsubmit="window.open('', 'ventanasola', 'width=400,height=300,top=200,left=300,toolbar=no, location=no, directories=no, status=no, menubar=no ,scrollbars=no, resizable=no')">
+			<table class="vecino">
+				<th colspan="3">DATOS PERSONALES</th>
+				<tr>
+		
+					<td>
+						Cédula: 
+							<input type="text" name="cedula" required id="cedula"/> 
+					</td>
+</tr>
+				
+				<tr>					
+					<td colspan="3"> 	
+						<input id="botonGris" type="submit" value="Registrar"> 
+						<input id="botonGris" type="reset" value="Limpiar">
+						<input id="botonGris" type="button" value="Cancelar" onClick="location.href='admin_personas.php'">
+						</td>
+				</tr>
+				
+			</table>
+		</form>
 	</section>
 	<footer>
 		

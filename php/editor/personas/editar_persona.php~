@@ -41,7 +41,7 @@ else {
 				<tr>
 					<td>Nombres: <input type="text" name="nombres" value="<?php echo $reg['nombres'];?>" required size="30" > </td>				
 					<td>Apellidos: <input type="text" name="apellidos" value="<?php echo $reg['apellidos'];?>" required size="30" > </td>
-					<td>Cédula: <input type="text" name="cedula" value="<?php echo $reg['cedula'];?>" required id="cedula"> </td>				
+					<td>Cédula: <input type="text" name="cedula" value="<?php echo $reg['cedula'];?>" required > </td>				
 				</tr>
 				<tr>
 					<td>Estado civil: <select name="estado_civil">

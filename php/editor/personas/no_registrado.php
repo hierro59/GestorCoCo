@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-		<title>Registro exitoso | CoCo</title>
+		<title>No está registrado | CoCo</title>
 		<meta name="description" content="" charset="UTF-8"/>
 	<link rel="stylesheet" href="../../../css/estilo.css" type="text/css">
 </head>
@@ -10,8 +10,8 @@
 			<table class="advertencia">
 				<tr>
 					<td>
-					<h3>Persona registrada con</h3>
-					<h1>¡ÉXITO!</h1>
+
+					<h1>¡NO REGISTRADO!</h1>
 					</td>
 				</tr>
 				<tr>

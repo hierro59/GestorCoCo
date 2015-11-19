@@ -11,5 +11,5 @@ if ($_GET['cedula']==$reg['cedula']) {
 	else { header("location: carta_residencia_alquilado.php?cedula=$_GET[cedula]");}
 }
 
-else {header("location: emitir_cartas.php");}
+else {header("location: emitir_cartas.php");
 ?>
