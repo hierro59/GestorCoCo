@@ -1,4 +1,4 @@
-"This product includes PHP software, freely available from <http://www.php.net/software/>".
+"This product includes PHP software, freely available from <http://www.php.net/software/>"
 
 -------------------------------------------------------------------- 
                   The PHP License, version 3.01
