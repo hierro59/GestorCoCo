@@ -4,23 +4,26 @@ include('../bd_conexion.php');
 
 $pass2=$_REQUEST['password2'];
 
-if ($_REQUEST['password']==$pass2)
-
-	{
-mysql_query("insert into usuarios
+$ingresar="INSERT INTO usuarios
 (nombre,
 usuario,
 password,
-tipo_usuario) 
-value('$_REQUEST[nombre]',
+tipo_usuario)
+VALUES
+('$_REQUEST[nombre]',
 '$_REQUEST[usuario]',
 '$_REQUEST[password]',
-'$_REQUEST[tipo_usuario]')") or die("Problemas en el select ".mysql_error()." <a href='nuevoregistro.php'>Volver</a>");
-	mysql_close($conexion);
-header("Location: registro_usuario_exitoso.php");
+'$_REQUEST[tipo_usuario]')";
+
+if ($_REQUEST['password']==$pass2)
+
+	{
+mysqli_query($conexion,$ingresar) or die ("Problemas en el INSERT ".mysqli_error()." <a href='nuevoregistro.php'>Volver</a>");
+	
+header("Location: admin_usuario.php");
 	}
 else
 {
-header("Location: errorpass.php");
+header("Location: nuevo_usuario.php?error");
 }
 ?>

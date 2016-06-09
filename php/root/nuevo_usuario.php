@@ -6,6 +6,7 @@ include('../seguridad_root.php');
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="../../css/estilo.css" type="text/css">
+<script type="text/javascript" src="../../js/funciones.js"></script>
 <link rel="icon" type="image/png" href="../../img/coquito.png" />
 <title>Nuevo Usuario | CoCo</title>
 </head>
@@ -20,7 +21,7 @@ include('../seguridad_root.php');
 		</div>
     </header>
 		<section>
-			<form action="regnubd.php" method="post" target="ventanasola" onsubmit="window.open('', 'ventanasola', 'width=400,height=300,top=200,left=300,toolbar=no, location=no, directories=no, status=no, menubar=no ,scrollbars=no, resizable=no')">
+			<form action="" method="post" name="formulario" onsubmit="return confirmar();">
 			<table class="vecino" align="center" border="solid">
 				<th colspan="2">
 					Ingrese los datos del nuevo usuario
@@ -71,9 +72,15 @@ include('../seguridad_root.php');
 					<td colspan="2">
 						<input id="botonGris" type="button" value="Cancelar" onClick="location.href='admin_usuario.php'">
 						<input id="botonGris" type="reset" value="Limpiar">
-						<input id="botonGris" type="submit" value="Registrar">
+						<input id="botonGris" type="submit" value="Registrar" onClick="document.formulario.action='regnubd.php'; document.formuario.submit()">
 					</td>
 				</tr>
+				<th colspan="2"> <?php
+if($_SERVER["QUERY_STRING"]=="error")
+{
+echo "<span style='color:blue;font-size:30px;'>  Las contraseñas no coinciden </span> " ;
+}
+?></th>
 			</table>
 			</form>
 		</section>

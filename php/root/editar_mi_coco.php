@@ -42,9 +42,9 @@ include('../consultar_mi_coco.php');
 				</tr>
 				<tr>
 					<td colspan="2">
-			<input id="botonGris" type="submit" value="Grabar datos" />
 			<input id="botonGris" type="button" value="Cancelar" onClick="location.href='mi_consejo_comunal.php'"/>
 			<input type="hidden" name="codigo_coco" value="1" />
+			<input id="botonGris" type="submit" value="Grabar datos" />
 					</td>
 				</tr>
 			</table>

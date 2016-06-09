@@ -20,20 +20,13 @@ echo	"<div id='icomenu'>
 		<a href='../root/principal.php'><img src='../../img/inicio.png' alt='Salir' /></a>
 		</div>";
 		}
-else {
-	echo	"<div id='icomenu'>
-		<a href='../principal_editor.php'><img src='../../img/inicio.png' alt='Salir' /></a>
-		</div>";
-		}
-		
 ?>
 	</header>
 	<section id="">
 		<table id="centrar" align="center">
 			<tr>
 				<td id="boton"><a href="personas/admin_personas.php" id="BotonLink">Personas</a></td>
-			</tr>
-			<tr>
+			
 				<td id="boton"><a href="cartas/emitir_cartas.php" id="BotonLink">Emitir Cartas</a></td>
 			</tr>
 		

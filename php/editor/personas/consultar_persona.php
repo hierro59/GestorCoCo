@@ -6,7 +6,7 @@ if($reg['cedula']==$_GET['cedula']) {
 	echo '';
 }
 else {
-	header("Location: no_registrado.php");
+	header("Location: admin_personas.php");
 }
 
 
@@ -21,16 +21,34 @@ else {
 <body>
 	<header>
 		<img src="../../../img/LogoCabecera.png" alt="Gestor para Consejos Comunales" />
+		<div id="icomenu">
+		<a href="../../../index.php" id="IcoLink"><img src="../../../img/icosalir.png" alt="Salir" /></a>
+		</div>
+<?php		
+		
+if($_SESSION['tipo_usuario']=="1") {
+	
+echo	"<div id='icomenu'>
+		<a href='../../root/principal.php'><img src='../../../img/inicio.png' alt='Salir' /></a>
+		</div>";
+		}
+else {
+	echo	"<div id='icomenu'>
+		<a href='../principal_editor.php'><img src='../../../img/inicio.png' alt='Salir' /></a>
+		</div>";
+		}
+		
+?>
 	</header>
 	<section>
 
 
-			<table class="vecino" id="centrado">
+			<table class="vecino" align="center">
 			
 				<th colspan="2">DATOS PERSONALES</th>
 				
 				<tr>
-					<td id="informeCol1">
+					<td >
 						Nombres: 
 					</td>
 					<td id="informeCol2">
@@ -61,14 +79,7 @@ else {
 						<?php echo $reg['fecha_nacimiento'];?>
 					</td>
 				</tr>
-				<tr>
-					<td>
-						Sexo:
-					</td>
-					<td id="informeCol2">
-						<?php echo $reg['sexo'];?> <br>
-					</td>
-				</tr>
+				
 				<tr>
 					<td>
 						Estado civil: 
@@ -93,14 +104,7 @@ else {
 						<?php echo $reg['tlf_habitacion'];?> <br>
 					</td>
 				</tr>
-				<tr>
-					<td>
-						Tlf Trabajo: 
-					</td>
-					<td id="informeCol2">
-						<?php echo $reg['tlf_trabajo'];?> <br>
-					</td>
-				</tr>
+				
 				<tr>
 					<td>
 						Correo: 
@@ -144,22 +148,7 @@ else {
 						<?php echo $reg['ciudad'];?> <br>
 					</td>
 				</tr>
-				<tr>
-					<td>
-						Municipio: 
-					</td>
-					<td id="informeCol2">
-						<?php echo $reg['municipio'];?> <br>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Estado: 
-					</td>
-					<td id="informeCol2">
-						<?php echo $reg['estado'];?> <br>
-					</td>
-				</tr>
+				
 				
 				<th colspan="2">DATOS PROFESIONALES Y ACADÉMICOS: <br></th>
 				
@@ -171,14 +160,7 @@ else {
 						<?php echo $reg['profesion'];?>
 					</td>
 				</tr>
-				<tr>
-					<td>
-						¿Trabaja actualmente? 
-					</td>
-					<td id="informeCol2">
-						<?php echo $reg['trabaja'];?>
-					</td>
-				</tr>
+				
 				<tr>
 					<td>
 						Nivel de instrucción: 
@@ -203,40 +185,21 @@ else {
 						<?php echo $reg['donde_trabaja'];?>
 					</td>
 				</tr>
-				<tr>
-					<td>
-						Actividad comercial en la casa: 
-					</td>
-					<td id="informeCol2">
-						<?php echo $reg['que_vende_en_casa'];?> <br>
-					</td>
-				</tr>
 				
-				<th colspan="2">SALUD: <br></th>
 				
-				<tr>
-					<td>
-						¿Necesita ayuda especial para un enfermo en su casa?
-					</td> 
-					<td id="informeCol2">
-						<?php echo $reg['ayuda_especial'];?> <br>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						¿Que tipo de ayuda? 
-					</td>
-					<td id="informeCol2">
-						<?php echo $reg['describa_ayuda'];?> <br>
-					</td>
-				</tr>
+				
 								
 				<tr>					
 					<td colspan="3"> 	
-<!--						<input id="botonGris" type="submit" value="Editar"> 
-						<input id="botonGris" type="button" value="Volver" onClick="location.href='admin_personas.php'"></td>
--->
-						<input id="botonGris" name="button" type="button" onclick="window.close();" value="Cerrar" />
+						
+						<form method="get" action="editar_persona.php" name="formulario">
+						
+							<input type="hidden" name="cedula" value="<?php echo $reg['cedula'];?>">
+							<a href="<?php echo $_GET['anterior'];?>"><span id="botonGris">Volver</span></a>
+							<input id="botonGris" type="submit"	value="editar">
+
+						</form>
+						
 				</tr>
 				
 			</table>

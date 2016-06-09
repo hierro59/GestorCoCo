@@ -1,0 +1,23 @@
+/**************************************		
+		Diseñado por Félix León en la ciudad de
+		Araure estado Portuguesa, Venezuela.
+		hierro59@gmail.com
+		Todos los derechos reservados.
+		**************************************/
+
+@import url(reset.css);
+
+tr#titulo {
+	background-color: grey;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+td {
+	padding: 2px;
+}
+
+td#lista {
+	background-color: #F2F2F2;
+}

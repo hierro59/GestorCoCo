@@ -34,18 +34,26 @@ else {
 		<table id="centrar" align="center">
 			<tr>
 				<td id="boton">
-					<a href="nueva_persona.php" id="BotonLink">Registrar nueva persona</a>
+					<a href="nueva_persona.php" id="BotonLink">Registrar <br> nueva persona</a>
+				</td>
+				<td id="boton">					
+					<a href="consultarlos_todos.php" id="BotonLink">Verlos todos</a>
+				</td>
+			
+				<td id="boton">
+					<a href="busqueda_avanzada.php" id="BotonLink">Consulta <br> avanzada</a>
 				</td>
 			</tr>
-			<tr> 
-				<td id="boton">
-					<label for="cedula" ><h3>Consultar datos de personas</h3></label><br>
-					<form method="GET" action="consultar_persona.php" name="formulario" target="ventanasola" onsubmit="window.open('', 'ventanasola', 'width=600,height=500,top=200,left=300,toolbar=no, location=no, directories=no, status=no, menubar=no ,scrollbars=yes, resizable=no')">
-					<input type="text" name="cedula" required="" value="Ingrese número de cédula" id="cedula" onclick="borracampocedula()" onblur="restauracampocedula()"><br><br>
-					<input type="submit" value="Consultar" class="boton2">
-					</form><br>
+			<tr>
+				<td colspan="3" id="boton">
+					<label for="cedula" ><h3>Consultar datos <br> de personas</h3></label><br>
+						<form method="GET" action="consultar_persona.php" name="formulario">
+							<input type="text" name="cedula" required value="Ingrese número de cédula" id="cedula" onclick="borracampocedula()" onblur="restauracampocedula()"><br><br>
+							<input type='hidden' name='anterior' value='admin_personas.php'>
+							<input type="submit" value="Consultar" class="boton2">
+						</form>
 				</td>
-			</tr>		
+			</tr>
 		</table>
 	</section>
 	<footer>

@@ -22,9 +22,9 @@ include('../seguridad_root.php');?>
 <?php 
 include('../bd_conexion.php');
 
-$rst_usuarios=mysql_query("SELECT * FROM usuarios where codigo='$_REQUEST[codigo]'") or die ("Problemas en el select:".mysql_error());
+$rst_usuarios=mysqli_query($conexion,"SELECT * FROM usuarios where codigo='$_REQUEST[codigo]'") or die ("Problemas en el select:".mysql_error());
 
-if ($reg=mysql_fetch_array($rst_usuarios))
+if ($reg=mysqli_fetch_array($rst_usuarios))
 {
 ?>
 	<section>

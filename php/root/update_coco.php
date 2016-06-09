@@ -5,17 +5,17 @@
 header("Content-Type: text/html;charset=utf-8");
 include("../../php/bd_conexion.php");
 include("../../php/consultar_mi_coco.php");
-mysql_query("SET NAMES 'utf8'");
 
-$codigo_coco_confirma=$_REQUEST['codigo_coco'];
+mysqli_query("SET NAMES 'utf8'");
 
-mysql_query("update consejo_comunal set 
+
+mysqli_query($conexion,"update consejo_comunal set 
 numero_registro= '$_REQUEST[numero_registro]',
 nombre_coco= '$_REQUEST[nombre_coco]',
 direccion_coco= '$_REQUEST[direccion_coco]',
-rif_coco='$_REQUEST[rif_coco]' where codigo_coco=$codigo_coco_confirma") 
+rif_coco='$_REQUEST[rif_coco]'") 
 
-or die ("Problemas en el select ".mysql_error()."vamos mal");
+or die ("Problemas en el select ".mysqli_error()."vamos mal");
 
 header("Location: mi_consejo_comunal.php");
 

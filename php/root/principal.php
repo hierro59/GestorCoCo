@@ -21,11 +21,9 @@
 			</th>
 				<tr>
 					<td id="boton"><a href="../editor/principal_editor.php" id="BotonLink">Asuntos Civiles</a></td>
-				</tr>
-				<tr>
+					
 					<td id="boton"> <a href="mi_consejo_comunal.php" id="BotonLink"> Mi Consejo Comunal</a></td>				
-				</tr>
-				<tr>
+				
 					<td id="boton"><a href="admin_usuario.php" id="BotonLink">Administrar usuarios</a></td>				
 				</tr>
             

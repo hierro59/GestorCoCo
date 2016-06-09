@@ -40,8 +40,8 @@ include('../consultar_mi_coco.php');
 				</tr>
 				<tr>
 					<td colspan="2">
-					<input id="botonGris" type="button" value="Editar datos" onClick="location.href='editar_mi_coco.php'" />
 					<input id="botonGris" type="button" value="Cancelar" onClick="location.href='principal.php'" />
+					<input id="botonGris" type="button" value="Editar datos" onClick="location.href='editar_mi_coco.php'" />
 					</td>
 				</tr>
 			</table>

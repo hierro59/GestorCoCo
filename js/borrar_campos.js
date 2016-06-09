@@ -23,34 +23,34 @@ function restauracampofechavivienda(){
 //Tlf Movil
 
 function borracampomovil(){
-if(document.formulario.tlf_movil.value == "Ej. 0416-1234567")
+if(document.formulario.tlf_movil.value == "Ej. 04161234567")
    document.formulario.tlf_movil.value = ""} 
 
 function restauracampomovil(){
   if(document.formulario.tlf_movil.value=="")
-   document.formulario.tlf_movil.value="Ej. 0416-1234567"
+   document.formulario.tlf_movil.value="Ej. 04161234567"
    }
    
    //Tlf Habitación
    
 function borracampohab(){
-if(document.formulario.tlf_habitacion.value == "Ej. 0255-1234567")
+if(document.formulario.tlf_habitacion.value == "Ej. 02551234567")
    document.formulario.tlf_habitacion.value = ""} 
 
 function restauracampohab(){
   if(document.formulario.tlf_habitacion.value=="")
-   document.formulario.tlf_habitacion.value="Ej. 0255-1234567"
+   document.formulario.tlf_habitacion.value="Ej. 02551234567"
    }
    
   //Tlf Trabajo
    
 function borracampotrabajo(){
-if(document.formulario.tlf_trabajo.value == "Ej. 0255-1234567")
+if(document.formulario.tlf_trabajo.value == "Ej. 02551234567")
    document.formulario.tlf_trabajo.value = ""} 
 
 function restauracampotrabajo(){
   if(document.formulario.tlf_trabajo.value=="")
-   document.formulario.tlf_trabajo.value="Ej. 0255-1234567"
+   document.formulario.tlf_trabajo.value="Ej. 02551234567"
    }
    
    //Correo

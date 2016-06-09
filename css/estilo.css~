@@ -1,0 +1,367 @@
+		/**************************************		
+		Diseñado por Félix León en la ciudad de
+		Araure estado Portuguesa, Venezuela.
+		hierro59@gmail.com
+		Todos los derechos reservados.
+		**************************************/
+
+@import url(reset.css);
+
+								
+								/*************
+								Diseño general
+								*************/
+
+body {
+	background-image: url("../img/fondo.jpg");
+	background-attachment: fixed;
+}
+
+a {
+	color: white;
+}
+
+h1 {
+	color: white;
+	font-family: Verdana, Arial;
+	font-size: 30px;
+	font-weight: bold;
+	}
+	
+h2 {
+	font-family: Verdana, Arial;
+	font-size: 25px;
+	font-weight: bold;
+	}
+
+h3 {
+	color: white;
+	font-family: Verdana, Arial;
+	font-size: 20px;
+	font-weight: bold;
+	}
+	
+h4 {
+	color: white;
+	font-family: Verdana, Arial;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+h5 {
+	font-family: Verdana, Arial;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+strong {
+	font-weight: bold;
+}
+/*
+#centrar {
+	position: relative;
+	width: 400px;
+	height: 300px;
+}
+*/
+
+#centrado {
+	position: absolute;
+
+}
+
+#centrar_logo {
+	position: absolute;
+	left: 120px;
+	top: 120px;
+}
+
+#center {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+	background: #4c9900;
+	height: 600px;
+	width: 600px;
+	
+}
+
+.advertencia {
+	position: absolute;
+	left: 20%;
+	top: 20%;
+}
+
+#errorlog {
+	color: white;
+	font-family: Verdana, Arial;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: red;
+}
+
+								/********************
+								Cabecera de la pagina
+								********************/
+
+header {
+	background-color: #990000;
+	padding: 20px; 
+	height: 50px;
+	color: white;
+}
+
+div#icomenu {
+	float: right;
+	width: 32px;
+	height: 32px;
+	background-image: linear-gradient(to bottom, #a80e0e 0px, #000000 100%);
+	padding: 15px 15px 15px 15px;
+	border: solid 2px black;
+	box-shadow: 0px 1px 0px #545454 inset;
+	border-radius: 5px;
+}
+
+
+div#icomenu:hover {
+
+	float: right;
+	width: 32px;
+	height: 32px;
+	background-image: linear-gradient(to bottom, #DB1212 0px, #262626 100%);
+
+
+}
+
+
+
+
+img {
+	margin: auto;
+}
+
+								/****************
+								Pagina de ingreso
+								****************/
+#tableindex td {
+	font-family: Verdana, Arial;
+	font-size: 20px;
+	border-radius: solid 1px white;
+	
+	padding: 10px 10px 10px 10px;
+}
+
+#centrar_ingreso {
+	position: absolute;
+	left: 150px;
+	top: 300px;
+
+}
+
+								/**************
+								Pagina Principal
+								***************/
+
+
+
+								/**********
+								Formularios
+								***********/
+
+								
+table {
+	margin-top: 2%;
+	font-family: Verdana, Arial;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+th {
+	color: white;
+	height: 3%;
+	background-color: #990000;
+}
+
+
+
+td#item {
+	color: white;
+	background-color: #990000;
+	height: 20px;
+}
+
+td#seleccion {
+	background-color: grey;
+	padding: 10px 10px 10px 10px;
+}
+
+table img {
+	
+}
+
+#cedula {
+	color: gray;
+}
+
+#cedula:focus {
+	color: black;
+}
+
+#BotonInput {
+	margin: 10px 10px 10px 10px;
+}
+
+input#ingreso {
+	padding: 10px 10px 10px 10px;
+	margin: 5px 5px 5px 5px;
+}
+
+[required] {
+
+}
+
+/*input:invalid {
+	font-family: Verdana, Arial;
+	font-size: 20px;
+	color: white;
+	background-color: red;
+}*/
+
+
+
+.vecino td,th, {
+
+	padding: 10px 10px 10px 10px;
+	height: 33%;
+	width: 33%;
+
+} 
+
+.vecino td {
+	background-color: grey;
+}
+
+.vecino input {
+	margin:	10px 10px 10px 10px;
+	padding: 1% 1% 1% 1%;
+}
+
+								/*****
+								Cartas
+								*****/
+
+.cartas {
+	padding: 100px 100px 100px 100px;
+	background-color: white;
+	margin: 10px 150px 150px 150px;
+
+}
+
+								/******
+								Botones
+								******/
+
+#BotonLink {
+	display: block;
+	padding: 70px 50px 70px 50px;
+}
+
+
+#cool {
+	color: white;
+	text-shadow: 0px -1px 0px #222;
+	background-image: linear-gradient(to bottom, #DB1212 0px, #262626 100%);
+	padding: 5px 5px 5px 5px;
+}
+
+#cool:hover {
+	padding: 15px 15px 15px 15px;
+}
+
+#boton {
+	color: white;
+	text-shadow: 0px -1px 0px #222;
+	background-image: linear-gradient(to bottom, #a80e0e 0px, #000000 100%);
+	padding: 5px 5px 5px 5px;
+	border: solid 2px black;
+	box-shadow: 0px 1px 0px #545454 inset;
+	border-radius: 5px;
+}
+
+#boton:hover {
+	color: black;
+	text-shadow: 2px 2px 1px #000;
+	background-image: linear-gradient(to bottom, #DB1212 0px, #262626 100%);
+}
+
+.boton2 {
+	color: white;
+	text-shadow: 0px -1px 0px #222;
+	background-image: linear-gradient(to bottom, #381500 0px, #5e4300 100%);
+	padding: 5px 5px 5px 5px;
+	border: solid 2px black;
+	box-shadow: 0px 1px 0px #545454 inset;
+	border-radius: 5px;
+}
+
+.boton2:hover {
+	opacity: 0.5;
+}
+
+#botonGris {
+	color: black;
+	text-shadow: 0px -1px 0px #222;
+	background-image: linear-gradient(to bottom, #ffffff 0px, #c0c0c0 100%);
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+	border: solid 2px black;
+}
+
+#botonGris:hover {
+	background-image: linear-gradient(to bottom, #ffffff 0px, #7a7a7a 100%);
+}
+
+#botonGrisInforme {
+	color: black;
+	text-shadow: 0px -1px 0px #222;
+	background-image: linear-gradient(to bottom, #ffffff 0px, #c0c0c0 100%);
+	border-radius: 5px;
+	border: solid 2px black;
+}
+
+#botonGrisInforme:hover {
+	background-image: linear-gradient(to bottom, #ffffff 0px, #7a7a7a 100%);
+}
+
+
+								/******
+								Informe
+								******/
+								
+
+td#informeCol2 {
+	padding: 2px;
+	font-weight: bold;
+	background-color: whitesmoke;
+}
+
+td#informeTodos {
+	background-color: whitesmoke;
+	padding: 5px 5px 5px 5px;
+}
+
+#enlace {
+	color: blue;
+}
+
+								/***************
+								Pie de la pagina
+								***************/
+
+footer {
+	
+	}

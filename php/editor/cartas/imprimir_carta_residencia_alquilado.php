@@ -66,7 +66,7 @@ setlocale(LC_ALL,"es_VE.UTF-8"); //cambia a español para mostrar la fecha con "
 		<script>
           setTimeout("print();",500);
           setTimeout("window.location='../principal_editor.php';",10000);
-         </script>
+      </script>
 	
 	</section>	
 	

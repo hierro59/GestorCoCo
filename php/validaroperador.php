@@ -5,9 +5,9 @@ $_SESSION['password']=$_REQUEST['password']; //Establece los datos de la contras
 
 include('bd_conexion.php');
 
-$rst_usuarios=mysql_query("SELECT tipo_usuario, password FROM usuarios where usuario='$_REQUEST[usuario]'") or die ("Problemas en el select:".mysql_error());
+$rst_usuarios=mysqli_query($conexion,"SELECT tipo_usuario, password FROM usuarios where usuario='$_REQUEST[usuario]'") or die ("Problemas en el select:".mysql_error());
 
-$reg=mysql_fetch_array($rst_usuarios);
+$reg=mysqli_fetch_array($rst_usuarios);
 
 $pass=$_REQUEST['password'];
 

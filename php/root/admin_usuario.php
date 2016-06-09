@@ -3,13 +3,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="../../css/estilo.css" type="text/css">
+<script type="text/javascript" src="../../js/funciones.js"></script>
 <link rel="icon" type="image/png" href="../../img/coquito.png" />
-<title>Administrar Usuarios | CoCo</title>
+<title>Administrar Usuarios | Gestor Social</title>
 </head>
 <body>
 <div id="body">
 	<header>
-		<img src="../../img/LogoCabecera.png" alt="Gestor para Consejos Comunales" />
+		<img src="../../img/LogoCabecera.png" alt="Gestor para Consejos Comunales" id="logoCabecera"/>
 		<div id="icomenu">
 		<a href="../../index.php"><img src="../../img/icosalir.png" alt="Salir" /></a>
 		</div>
@@ -18,7 +19,7 @@
 		</div>
     </header>
 	<section>
-		<form action="editar_usuario.php" method="post">
+		<form action="" name="formulario" method="post" onsubmit="return confirmar();">
 		<table class="vecino" align="center">
 			<tr>
 				<td id="item">
@@ -38,9 +39,9 @@
 
 include('../bd_conexion.php');
 
-$rst_usuarios=mysql_query("SELECT * FROM usuarios") or die ("Problemas en el select:".mysql_error());
+$rst_usuarios=mysqli_query($conexion,"SELECT * FROM usuarios") or die ("Problemas en el select:".mysql_error());
 
-while ($reg=mysql_fetch_array($rst_usuarios)) 						//Listamos y ordenamos los registros.
+while ($reg=mysqli_fetch_array($rst_usuarios)) 						//Listamos y ordenamos los registros.
 	{echo "<tr>".
 			"<td>".
 			"<input type='radio' name='codigo' value='".$reg['codigo']."'>".
@@ -58,9 +59,11 @@ while ($reg=mysql_fetch_array($rst_usuarios)) 						//Listamos y ordenamos los r
 ?>
 	<tr >
 		<td colspan="4">
-		<input id="botonGris" type="button" value="Nuevo usuario" onClick="location.href='nuevo_usuario.php'" />
-		<input id="botonGris" type="submit" value="Editar" />
+
 		<input id="botonGris" type="button" value="Cancelar" onClick="location.href='principal.php'" />
+		<input id="botonGris" type="submit" value="Editar" onClick="document.formulario.action='editar_usuario.php'; document.formuario.submit()"/>
+		<input id="botonGris" type="submit" value="Eliminar" onClick="document.formulario.action='eliminar_usuario.php'; document.formuario.submit()" />
+		<input id="botonGris" type="button" value="Nuevo usuario" onClick="location.href='nuevo_usuario.php'" />
 		</td>
 		
 	</tr>
