@@ -5,7 +5,7 @@ Gestor para Consejos Comunales
 
 Aplicación que pretende automatizar algunos procesos en los Consejos Comunales.
 
-Pronto se liberará la versión "BETA" en http://gestorcoco.tk para generar feedback con los usuarios reales.
+Liberada versión "BETA".
 
 Las opiniones, criticas y sugerencias, pueden ser enviadas a hierro59@gmail.com para ser atendidas.
 
